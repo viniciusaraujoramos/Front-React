@@ -1,0 +1,12 @@
+*{
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: "Neuton", serif;
+}
+
+body{
+  min-height: 100vh;
+  width: 100vh;
+  background: linear-gradient(250deg, #C2BDDE 0%, #7212DB 100% );
+}
