@@ -73,3 +73,20 @@ form{
     }
 }
 
+.UP{
+
+    & button{
+        width: 80px;
+        height: 20px;
+        border-radius: 10px;
+        border: none;
+        cursor: pointer;
+        background-color: blue;
+        color: white;
+    }
+    
+    
+    & button:hover {
+        background-color: rgba(0, 0, 255, 0.363);
+    }
+}

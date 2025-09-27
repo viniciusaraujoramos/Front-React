@@ -2,6 +2,7 @@ import { useEffect, useState, useRef } from 'react'
 import './style.css'
 import Lixeira from '../../assets/lixeira.png'
 import api from '../../services/api'
+import { Link } from 'react-router-dom';
 
 function Home() {
   const [usuarios, setUsuarios] = useState([])
@@ -52,12 +53,20 @@ function Home() {
             <p>Nome: {usuario.nome}</p>
             <p>Idede: {usuario.idade}</p>
             <p>Email: {usuario.email}</p>
+          </div >
+          <div className='UP'>
+            <Link to={`/update/${usuario.id}`}>
+              <button>Update</button>
+            </Link>
           </div>
           <button onClick={ ()=> deleteUsuarios(usuario.id)}> 
             <img src={Lixeira} />
           </button>
+          
         </div>
       ))}
+
+      
 
     </div>
   )
